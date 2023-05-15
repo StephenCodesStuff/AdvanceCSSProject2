@@ -29,7 +29,7 @@ header {
   font-size: 125%;
   }
 
-  nav {
+  .header {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
@@ -37,12 +37,20 @@ header {
   }
   
   
-  a {
+  .headernav a {
       color: white;
       font-size: 20px;
       margin: 20px;
       text-decoration: none;
   
+  }
+
+  .footernav a {
+    color: black;
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+    
   }
   main {
     /* display: flex; */
@@ -64,34 +72,124 @@ header {
   }
   
   .Main-Section {
-    flex: 2;
+    /* flex: 1; */
     background-color: white;
     padding: 20px;
     display: flex;
-  }
-
-  .leadproject {
-    padding: 10px;
     width: 100%;
     text-align: center;
     border-style: solid;
     border-width: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  /* .leadproject {
+    width: 100%;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px; 
+   
+}*/
+/* 
+  .main-project img {
+    width: 1000px;
+    height: 300px;
+    margin: 0
+    
+  } */
+.smallproject {
+  width: 100%;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+  
 }
 
-  .leadproject img {
-    width: 100%;
-    
+/* .smallproject img{
+  width: 100%;
+  height: 200px;
+  } */
+
+  .smallbox {
+    width: 50%;
+    position: relative;
+  }
+  
+  #project0{    
+    background-image: url("../images/service-pnp-pga-12000-12042_150px.jpg");
+    min-height: 300px;
+  }
+  
+  #project1{
+    background-image: url("../images/boatprint.jpg");
+    min-height: 300px;
+
+  }
+  #project2{
+  background-image: url("../images/dice.jpg");
+  min-height: 300px;
+}
+  #project3{
+    background-image: url("../images/service-pnp-cph-3b40000-3b48000-3b48900-3b48901_150px.jpg");
+    min-height: 300px;
+  }
+
+  #project4{
+    background-image: url("../images/service-pnp-cph-3b40000-3b49000-3b49000-3b49068r.jpg");
+    min-height: 300px;
   }
 
   .Main-Section p {
     font-size: 85%;
   }
   
-  .ImageDetails {  
-    padding: 20px;
+  .main.project {  
+     /* width: 100%;
+    padding: 0;
     background: #13293d;
     color: #fff;
+    position: relative; */
+    width: 100%;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
 
+  }
+  .main-project img {
+    width: 1000px;
+    height: 300px;
+    margin: 0
+  }
+
+  .project-tag{
+    /* position: relative; */
+    position: absolute;
+    top: 200px;
+    /* top: 75%; */
+    /* left: 100px; */
+    background-color: darkgray;
+    width: 15%;
+    padding: 12px;
+    text-align: right;
+  }
+
+  .project-tag-small {
+    position: relative;
+    top: 200px;
+    background-color: darkgray;
+    width: 25%;
+    padding: 12px;
+    text-align: right;
   }
 
   @media screen and (max-width: 768px) {
