@@ -2,18 +2,33 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #116dc3;
+    background-color: rgb(70, 69, 69);
     padding-right: 2%;
     color: black;
     margin-right: 0;
+    line-height: 2.5;
   }
   
   h1 {
-      background-color:white;
-      margin-right: 0;
-  
-  
+      background-color:rgb(74, 153, 163);
+      margin-right: 100px;
+      line-height: 2.0;
+      font-size: larger;
+      text-align: right;
+      padding-left: 200px;
+      font-size: 175%;
+      padding-right: 20px;
+    }
+
+    h2 {
+      font-size: 150%;
+    }
+
+
+  h3{
+  font-size: 125%;
   }
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -28,5 +43,60 @@ header {
       margin: 20px;
       text-decoration: none;
   
+  }
+  main {
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container{
+    display:flex
+    
+  }
+  
+  aside {
+    /* flex: 1; */
+    background-color: lightgray;
+    padding: 20px;
+    border-left: solid black;
+    text-align: right;
+    width: 100px;
+  }
+  
+  .Main-Section {
+    flex: 2;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+  }
+
+  .leadproject {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+}
+
+  .leadproject img {
+    width: 100%;
+    
+  }
+
+  .Main-Section p {
+    font-size: 85%;
+  }
+  
+  .ImageDetails {  
+    padding: 20px;
+    background: #13293d;
+    color: #fff;
+
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
   }
   
