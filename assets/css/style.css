@@ -1,12 +1,15 @@
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(70, 69, 69);
-    padding-right: 2%;
-    color: black;
-    margin-right: 0;
-    line-height: 2.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(70, 69, 69);
+  padding-right: 2%;
+  color: rgb(49, 52, 61);
+  margin-right: 0;
+  line-height: 4.5;
   }
   
   h1 {
@@ -18,15 +21,24 @@ header {
       padding-left: 200px;
       font-size: 175%;
       padding-right: 20px;
+      color:rgb(49, 52, 61)(49, 52, 61)
     }
 
     h2 {
-      font-size: 150%;
+      font-size: 198%;
+      font-weight: bold;
+      color:rgb(49, 52, 61);
     }
 
 
   h3{
   font-size: 125%;
+  color:rgb(49, 52, 61);
+  }
+
+  h4{ 
+    font-size: 85%;
+    color:rgb(49, 52, 61);
   }
 
   .header {
@@ -42,20 +54,24 @@ header {
       font-size: 20px;
       margin: 20px;
       text-decoration: none;
+      text-decoration: underline white;
   
   }
 
   .footernav a {
-    color: black;
+    color: rgb(49, 52, 61);
     font-size: 20px;
     margin: 20px;
     text-decoration: none;
+    text-decoration: underline rgb(49, 52, 61)
     
   }
   main {
     /* display: flex; */
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: lightgray;
+    color:rgb(49, 52, 61);
   }
   .container{
     display:flex
@@ -66,20 +82,47 @@ header {
     /* flex: 1; */
     background-color: lightgray;
     padding: 20px;
-    border-left: solid black;
+    border-right: solid black 4px;
     text-align: right;
     width: 100px;
-  }
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.hero {
+  height: 200px;
+  width: 100%;
+  background-image: url(../images/Selfie.jpg);
+  background-size: cover;
+  background-position: 0px -327px;
+  
+}
+
+.hero-quote {
+  position: relative;
+  top: 122px;
+  left: 60%;
+  background-color: rgb(74, 153, 163);
+  width: 30%;
+  padding: 6px;
+  text-align: right;
+  z-index: 1;
+
+}
+.italics {
+  font-style:italic
+}
+
+
   
   .Main-Section {
     /* flex: 1; */
-    background-color: white;
+    background-color: lightgray;
     padding: 20px;
     display: flex;
     width: 100%;
     text-align: center;
-    border-style: solid;
-    border-width: 1px;
+    /* border-style: solid;
+    border-width: 1px; */
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -102,8 +145,6 @@ header {
 .smallproject {
   width: 100%;
   text-align: center;
-  border-style: solid;
-  border-width: 1px;
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -116,31 +157,66 @@ header {
   height: 200px;
   } */
 
-  .smallbox {
-    width: 50%;
+  .largebox {
+    width: 97%;
     position: relative;
+    margin: 8px;
+    border: solid rgb(74, 153, 163);
+    color:rgb(49, 52, 61);
+     height: 498px;
+  }
+  .smallbox {
+    width: 48%;
+    position: relative;
+    margin: 8px;
+    border: solid rgb(74, 153, 163);
+    color:rgb(49, 52, 61);
   }
   
   #project0{    
+    background-image: url("../images/catgray.jpg");
+    min-height: 300px;
+    
+  }
+  
+  #project0:hover{    
     background-image: url("../images/service-pnp-pga-12000-12042_150px.jpg");
     min-height: 300px;
   }
   
   #project1{
+    background-image: url("../images/boatprintgray.jpg");
+    min-height: 300px;
+
+  }
+
+  #project1:hover{
     background-image: url("../images/boatprint.jpg");
     min-height: 300px;
 
   }
   #project2{
+  background-image: url("../images/dicegray.jpg");
+  min-height: 300px;
+}
+#project2:hover{
   background-image: url("../images/dice.jpg");
   min-height: 300px;
 }
   #project3{
+    background-image: url("../images/deergray.jpg");
+    min-height: 300px;
+  }
+  #project3:hover{
     background-image: url("../images/service-pnp-cph-3b40000-3b48000-3b48900-3b48901_150px.jpg");
     min-height: 300px;
   }
 
   #project4{
+    background-image: url("../images/elephantgray.jpg");
+    min-height: 300px;
+  }
+  #project4:hover{
     background-image: url("../images/service-pnp-cph-3b40000-3b49000-3b49000-3b49068r.jpg");
     min-height: 300px;
   }
@@ -183,18 +259,34 @@ header {
     text-align: right;
   }
 
+  .project-tag-large{
+    position: relative;
+    top: 386px;;
+    background-color: rgb(74, 153, 163);
+    width: 25%;
+    padding: 12px;
+    text-align: right; 
+  }
   .project-tag-small {
     position: relative;
     top: 200px;
-    background-color: darkgray;
+    background-color: rgb(74, 153, 163);
     width: 25%;
     padding: 12px;
     text-align: right;
   }
 
+  
+
+
   @media screen and (max-width: 768px) {
     header {
       flex-direction: column;
     }
+    .smallbox {
+      width: 97%;
+    } 
   }
+
+  
   
