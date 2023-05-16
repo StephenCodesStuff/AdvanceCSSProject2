@@ -1,6 +1,7 @@
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -10,76 +11,87 @@ header {
   color: rgb(49, 52, 61);
   margin-right: 0;
   line-height: 4.5;
-  }
-  
-  h1 {
-      background-color:rgb(74, 153, 163);
-      margin-right: 100px;
-      line-height: 2.0;
-      font-size: larger;
-      text-align: right;
-      padding-left: 200px;
-      font-size: 175%;
-      padding-right: 20px;
-      color:rgb(49, 52, 61)(49, 52, 61)
-    }
+}
+a {
+  text-decoration: none;
+} 
 
-    h2 {
-      font-size: 198%;
-      font-weight: bold;
-      color:rgb(49, 52, 61);
-    }
-
-
-  h3{
-  font-size: 125%;
+p {
+  text-decoration: none;
   color:rgb(49, 52, 61);
-  }
+  font-size: 85%;
 
-  h4{ 
+}
+h1{
+    background-color:rgb(74, 153, 163);
+    margin-right: 100px;
+    line-height: 2.0;
+    font-size: larger;
+    text-align: right;
+    padding-left: 200px;
+    font-size: 175%;
+    padding-right: 20px;
+    color:rgb(49, 52, 61)
+    }
+
+h2{
+    font-size: 198%;
+    font-weight: bold;
+    color:rgb(49, 52, 61);
+    }
+
+
+h3{
+    text-decoration: none;
+    font-size: 125%;
+    color:rgb(49, 52, 61);
+  }
+  /* h3 a {
+    text-decoration: none;
+    font-size: 125%;
+    color:rgb(49, 52, 61);
+  } */
+h4{ 
     font-size: 85%;
     color:rgb(49, 52, 61);
   }
 
-  .header {
+.header {
     display: flex;
     justify-content: space-between;
     min-width: 300px;
-  
   }
   
   
-  .headernav a {
+.headernav a {
       color: white;
       font-size: 20px;
       margin: 20px;
       text-decoration: none;
       text-decoration: underline white;
-  
   }
 
-  .footernav a {
+.footernav a {
     color: rgb(49, 52, 61);
     font-size: 20px;
     margin: 20px;
     text-decoration: none;
-    text-decoration: underline rgb(49, 52, 61)
-    
+    text-decoration: underline rgb(49, 52, 61);
+
+
   }
-  main {
-    /* display: flex; */
+
+main {
     flex-direction: row;
     flex-wrap: wrap;
     background-color: lightgray;
     color:rgb(49, 52, 61);
   }
-  .container{
+.container{
     display:flex
-    
   }
   
-  aside {
-    /* flex: 1; */
+aside {
     background-color: lightgray;
     padding: 20px;
     border-right: solid black 4px;
@@ -87,6 +99,11 @@ header {
     width: 100px;
     margin-top: 13px;
     margin-bottom: 13px;
+    position: relative;
+}
+footer{
+  justify-content: space-between;
+  align-items: center;
 }
 .hero {
   height: 200px;
@@ -114,34 +131,21 @@ header {
 
 
   
-  .Main-Section {
-    /* flex: 1; */
+.Main-Section {
     background-color: lightgray;
     padding: 20px;
     display: flex;
     width: 100%;
     text-align: center;
-    /* border-style: solid;
-    border-width: 1px; */
     display: flex;
     flex-wrap: wrap;
     position: relative;
-  }
+}
+.bio {
+  text-align: left;
+  font-size: 100%;
+}
 
-  /* .leadproject {
-    width: 100%;
-    text-align: center;
-    border-style: solid;
-    border-width: 1px; 
-   
-}*/
-/* 
-  .main-project img {
-    width: 1000px;
-    height: 300px;
-    margin: 0
-    
-  } */
 .smallproject {
   width: 100%;
   text-align: center;
@@ -151,13 +155,7 @@ header {
   z-index: 1;
   
 }
-
-/* .smallproject img{
-  width: 100%;
-  height: 200px;
-  } */
-
-  .largebox {
+.largebox {
     width: 97%;
     position: relative;
     margin: 8px;
@@ -165,7 +163,7 @@ header {
     color:rgb(49, 52, 61);
      height: 498px;
   }
-  .smallbox {
+.smallbox {
     width: 48%;
     position: relative;
     margin: 8px;
@@ -173,29 +171,29 @@ header {
     color:rgb(49, 52, 61);
   }
   
-  #project0{    
+#project0{    
     background-image: url("../images/catgray.jpg");
     min-height: 300px;
     
   }
   
-  #project0:hover{    
+#project0:hover{    
     background-image: url("../images/service-pnp-pga-12000-12042_150px.jpg");
     min-height: 300px;
   }
   
-  #project1{
+#project1{
     background-image: url("../images/boatprintgray.jpg");
     min-height: 300px;
 
   }
 
-  #project1:hover{
+#project1:hover{
     background-image: url("../images/boatprint.jpg");
     min-height: 300px;
 
   }
-  #project2{
+#project2{
   background-image: url("../images/dicegray.jpg");
   min-height: 300px;
 }
@@ -221,16 +219,11 @@ header {
     min-height: 300px;
   }
 
-  .Main-Section p {
+  .Wormain-projects p {
     font-size: 85%;
   }
   
   .main.project {  
-     /* width: 100%;
-    padding: 0;
-    background: #13293d;
-    color: #fff;
-    position: relative; */
     width: 100%;
     text-align: center;
     border-style: solid;
@@ -239,20 +232,18 @@ header {
     flex-wrap: wrap;
     position: relative;
     z-index: 1;
+    margin: 0;
 
   }
-  .main-project img {
+  /* .main-project img {
     width: 1000px;
     height: 300px;
     margin: 0
-  }
+  } */
 
   .project-tag{
-    /* position: relative; */
     position: absolute;
     top: 200px;
-    /* top: 75%; */
-    /* left: 100px; */
     background-color: darkgray;
     width: 15%;
     padding: 12px;
