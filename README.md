@@ -8,5 +8,5 @@ I do not have any current deployed projects I linked to my previous homework.
 
 I used various techniques and incuded flex-boxes and a media res. 
 
-
-
+Images taken from The Library of Congress
+https://www.loc.gov/
